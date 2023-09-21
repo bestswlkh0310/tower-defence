@@ -1,0 +1,14 @@
+C:\Users\USER\RiderProjects\TowerDefence\TowerDefence\bin\Debug\TowerDefence.exe
+C:\Users\USER\RiderProjects\TowerDefence\TowerDefence\bin\Debug\TowerDefence.pdb
+C:\Users\USER\RiderProjects\TowerDefence\TowerDefence\obj\Debug\TowerDefence.csproj.AssemblyReference.cache
+C:\Users\USER\RiderProjects\TowerDefence\TowerDefence\obj\Debug\TowerDefence.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\RiderProjects\TowerDefence\TowerDefence\obj\Debug\TowerDefence.csproj.CoreCompileInputs.cache
+C:\Users\USER\RiderProjects\TowerDefence\TowerDefence\obj\Debug\TowerDefence.exe
+C:\Users\USER\RiderProjects\TowerDefence\TowerDefence\obj\Debug\TowerDefence.pdb
+C:\Users\USER\Desktop\develop\tower defence\TowerDefence\bin\Debug\TowerDefence.exe
+C:\Users\USER\Desktop\develop\tower defence\TowerDefence\bin\Debug\TowerDefence.pdb
+C:\Users\USER\Desktop\develop\tower defence\TowerDefence\obj\Debug\TowerDefence.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\develop\tower defence\TowerDefence\obj\Debug\TowerDefence.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Desktop\develop\tower defence\TowerDefence\obj\Debug\TowerDefence.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\develop\tower defence\TowerDefence\obj\Debug\TowerDefence.exe
+C:\Users\USER\Desktop\develop\tower defence\TowerDefence\obj\Debug\TowerDefence.pdb
