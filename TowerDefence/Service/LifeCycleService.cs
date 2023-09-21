@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using TowerDefence.Activitys;
 
 namespace TowerDefence
@@ -7,7 +8,7 @@ namespace TowerDefence
     {
         private static LifeCycleService _instance;
 
-        private static ILifeCycle _currentActivity;
+        private static Activity _currentActivity;
 
         public static LifeCycleService Instance()
         {
@@ -23,6 +24,12 @@ namespace TowerDefence
 
         public void SetActivity(Activity activity)
         {
+            if (_currentActivity != null)
+            {
+                _currentActivity.IsDie = true;
+            }
+            Console.Clear();
+            Console.SetCursorPosition(0, 0);
             _currentActivity = activity;
             _currentActivity.Start();
             InitPrintView();

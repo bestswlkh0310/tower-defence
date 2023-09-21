@@ -18,7 +18,8 @@ namespace TowerDefence
         enum MainEvent
         {
             ClickLeft = 0,
-            ClickRight = 1
+            ClickRight = 1,
+            Enter = 2
         }
         
         private ConsoleKeyInfo cki;
@@ -33,9 +34,7 @@ namespace TowerDefence
         {
             InitButtons();
             InitBackGroundView();
-            
-            RegisterView(ind1);
-            RegisterView(ind2);
+            InitIndicator();
         }
 
         public override void Update()
@@ -49,6 +48,9 @@ namespace TowerDefence
                     break;
                 case ConsoleKey.RightArrow:
                     PushEvent((int)MainEvent.ClickRight);
+                    break;
+                case ConsoleKey.Enter:
+                    PushEvent((int)MainEvent.Enter);
                     break;
             }
 
@@ -64,6 +66,16 @@ namespace TowerDefence
                         break;
                     case (int)MainEvent.ClickRight:
                         state.ind = 1;
+                        break;
+                    case (int)MainEvent.Enter:
+                        if (state.ind == 0)
+                        {
+                            LifeCycleService lifeCycleService = LifeCycleService.Instance();
+                            lifeCycleService.SetActivity(new GameActivity());
+                        } else if (state.ind == 1)
+                        {
+                            Environment.Exit(0);
+                        }
                         break;
                 }
                 return i;
@@ -83,22 +95,30 @@ namespace TowerDefence
 
         private void InitButtons()
         {
-            View title = new View(xPos: Constant.Width / 2 - 7, yPos: Constant.Height / 2 - 2, "Tower Defence!!");
             View start = new View(xPos: Constant.Width / 2 - 10, yPos: Constant.Height / 2, text: "start");
             View exit = new View(xPos: Constant.Width / 2 + 6, yPos: Constant.Height / 2, text: "exit");
-            RegisterAllView(start, exit, title);
+            RegisterAllView(start, exit);
         }
         
         private void InitBackGroundView()
         {
+            View title = new View(xPos: Constant.Width / 2 - 7, yPos: Constant.Height / 2 - 2, "Tower Defence!!");
+            View alert = new View(xPos: Constant.Width / 2 - 7, Constant.Height / 2 + 2, text: "Enter to start");
             View line1 = new View(xPos: 0, yPos: 0, text: new String('\u25a0', Constant.Width));
             View line2 = new View(xPos: 0, yPos: Constant.Height - 1, text: new String('\u25a0', Constant.Width));
-            RegisterAllView(line1, line2);
+            RegisterAllView(line1, line2, title, alert);
             for (int i = 1; i < Constant.Height - 1; i++)
             {
                 RegisterView(new View(xPos: 0, yPos: i, "\u25a0"));
                 RegisterView(new View(xPos: Constant.Width - 1, yPos: i, "\u25a0"));
             }
         }
+
+        private void InitIndicator()
+        {
+            RegisterView(ind1);
+            RegisterView(ind2);
+        }
+        
     }
 }
