@@ -6,7 +6,7 @@ using TowerDefence.Views;
 
 namespace TowerDefence.Activitys
 {
-    public abstract class Activity: ILifeCycle
+    public abstract class Activity
     {
         private Queue<int> _eventQueue = new Queue<int>();
 

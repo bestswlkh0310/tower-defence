@@ -41,11 +41,11 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Activitys\Activity.cs" />
-        <Compile Include="Activitys\ILifeCycle.cs" />
         <Compile Include="Constant.cs" />
         <Compile Include="Extensions.cs" />
         <Compile Include="GameActivity.cs" />
         <Compile Include="MainActivity.cs" />
+        <Compile Include="NoneTower.cs" />
         <Compile Include="Profile.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>

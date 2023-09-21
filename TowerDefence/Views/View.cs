@@ -17,8 +17,14 @@ namespace TowerDefence.Views
         
         public void PrintView()
         {
-            Console.SetCursorPosition(xPos, yPos);
-            Console.Write(text);
+            for (int i = 0; i < text.Length; i++)
+            {
+                Console.SetCursorPosition(xPos + i, yPos);
+                if (text[i] != ' ')
+                {
+                    Console.Write(text[i]);
+                }
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ namespace TowerDefence
         {
             public int ind;
         }
-
+        
         private State state;
         
         enum MainEvent

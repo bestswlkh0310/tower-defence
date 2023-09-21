@@ -1,7 +1,11 @@
-﻿namespace TowerDefence
+﻿using System.Collections.Generic;
+using TowerDefence.Views;
+
+namespace TowerDefence
 {
-    public class Tower
+    public abstract class Tower
     {
         public string name;
+        public List<View> views; // 7 * 3
     }
 }
