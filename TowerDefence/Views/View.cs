@@ -4,9 +4,9 @@ namespace TowerDefence.Views
 {
     public class View
     {
-        private int xPos;
-        private int yPos;
-        private string text;
+        public int xPos;
+        public int yPos;
+        public string text;
 
         public View(int xPos, int yPos, string text)
         {

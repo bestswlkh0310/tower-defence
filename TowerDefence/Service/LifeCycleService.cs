@@ -36,7 +36,7 @@ namespace TowerDefence
 
         public void InitPrintView()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < Constant.Height; i++)
             {
                 Console.WriteLine("");
             }
