@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using TowerDefence.Activitys;
 
-namespace TowerDefence
+namespace TowerDefence.Service
 {
     public class LifeCycleService
     {
@@ -43,9 +43,9 @@ namespace TowerDefence
 
         public void InitPrintView()
         {
-            for (int i = 0; i < Constant.Height; i++)
+            for (int i = 0; i < Constant.Height + 6; i++)
             {
-                Console.WriteLine("");
+                Console.WriteLine(" ");
             }
         }
     }

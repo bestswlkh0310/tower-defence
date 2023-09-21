@@ -43,11 +43,16 @@
         <Compile Include="Activitys\Activity.cs" />
         <Compile Include="Activitys\ILifeCycle.cs" />
         <Compile Include="Constant.cs" />
+        <Compile Include="Extensions.cs" />
         <Compile Include="GameActivity.cs" />
         <Compile Include="MainActivity.cs" />
+        <Compile Include="Profile.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
         <Compile Include="Service\LifeCycleService.cs" />
+        <Compile Include="AttackTower.cs" />
+        <Compile Include="Tower.cs" />
+        <Compile Include="TowerService.cs" />
         <Compile Include="Views\View.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>

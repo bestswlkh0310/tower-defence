@@ -2,6 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using TowerDefence.Activitys;
+using TowerDefence.Service;
 using TowerDefence.Views;
 
 namespace TowerDefence

@@ -1,4 +1,6 @@
-﻿namespace TowerDefence
+﻿using TowerDefence.Service;
+
+namespace TowerDefence
 {
     internal class Program
     {
